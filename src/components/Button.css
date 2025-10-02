@@ -1,0 +1,86 @@
+.calc-button {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border: none;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  user-select: none;
+}
+
+.calc-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.calc-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: press 0.1s ease;
+}
+
+@keyframes press {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn-operator {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-operator:hover {
+  background: linear-gradient(135deg, #5568d3 0%, #653f8f 100%);
+}
+
+.btn-equals {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  grid-row: span 2;
+}
+
+.btn-equals:hover {
+  background: linear-gradient(135deg, #e082ea 0%, #e4465b 100%);
+}
+
+.btn-clear {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  color: white;
+  grid-column: span 2;
+}
+
+.btn-clear:hover {
+  background: linear-gradient(135deg, #e95f89 0%, #edd02f 100%);
+}
+
+.btn-function {
+  background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+  color: #333;
+}
+
+.btn-function:hover {
+  background: linear-gradient(135deg, #eab1da 0%, #95b0dd 100%);
+}
+
+.btn-zero {
+  grid-column: span 2;
+}
+
+@media (max-width: 480px) {
+  .calc-button {
+    font-size: 1.25rem;
+    padding: 16px;
+    border-radius: 10px;
+  }
+}
